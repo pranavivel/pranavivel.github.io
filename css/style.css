@@ -12,7 +12,7 @@ nav {
   padding-right: 30px;
   justify-content: space-between;
   background-color: #B3C8CF;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Sour Gummy', Times, serif;
   font-weight: 900;
 }
 
@@ -21,7 +21,7 @@ footer {
 	display: flex;
   justify-content: center;
   background-color: #B3C8CF;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Sour Gummy', Times, serif;
   font-weight: 900;
 
   position: fixed;
@@ -44,6 +44,8 @@ header h1 {
   color: #31383b;
 }
 
+
+
 header img {
   background-color: #B3C8CF;
   padding: 5px;
@@ -52,13 +54,13 @@ header img {
 
 .address {
   font-family: 'Sour Gummy', cursive;
-  font-size: 8px;
+  font-size: 16px;
   color: #31383b;
 }
 
 .tagline {
   font-family: 'Sour Gummy', cursive;
-  font-size: 8px;
+  font-size: 14px;
   color: #31383b;
 }
 
@@ -92,6 +94,7 @@ section h2 {
 section dl {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  font-family: 'Nunito', sans-serif;
 }
 
 section dt {
@@ -105,20 +108,23 @@ section dd {
   font-family: 'Nunito', sans-serif;
   color: #31383b;
   margin-right: 70%;
+  white-space: nowrap;
 }
 
 section ul {
   list-style-type:circle;
+  font-family: 'Nunito', sans-serif;
 }
 
-section a {
+a {
   color: #5c7c87;
   text-decoration: none;
 }
 
-section a:hover {
+a:hover {
   color:cadetblue;
 }
+
 
 /**************   Projects   *****************/
 .three-col {
@@ -137,7 +143,8 @@ section a:hover {
   height: 250px;
   border: 1px solid #f1f1f1;
   perspective: 1000px;
-
+  border-color: #e7e3dc;
+  border-top: 0px;
 }
 
 /* This container is needed to position the front and back side */
@@ -166,15 +173,20 @@ section a:hover {
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: #5c7c87;
+  background-color: #f4f0ea;
   color: black;
 }
 
 /* Style the back side */
 .flip-card-back {
-  background-color: #5c7c87;
-  color: white;
+  background-color: #f4f0ea;
+  color: black;
   transform: rotateY(180deg);
+}
+
+.flip-card-back ul{
+  text-align: left;
+  padding-left: 30px;
 }
 
 /**************   Responsiveness   *****************/
@@ -199,12 +211,31 @@ section a:hover {
 }
 
 input {
-  background-color: #5e8b8f;
+  background-color: #f4f0ea;
   font-family: 'Sour Gummy', cursive;
-  border: transparent;
-  
+  border: 1px solid #ccc;
+  width: 300px;
+  height: 30px;
 }
 
 textarea {
-  background-color: #5e8b8f;
+  background-color: #f4f0ea;
+  border: 1px solid #ccc;
+  width: 300px;
+  height: 50px;
+}
+
+form p {
+  font-family: 'Sour Gummy', cursive;
+  color: #31383b;
+}
+
+form button {
+  background-color: #B3C8CF;
+  border-color: #f4f0ea;
+  border-radius: 40%;
+  width: 70px;
+  height: 30px;
+  font-family: 'Sour Gummy', cursive;
+  color: #31383b;
 }
